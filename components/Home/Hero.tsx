@@ -4,7 +4,7 @@ import NextImage from "../Shared/Image/NextImage";
 
 const Hero = () => {
   return (
-    <ComponentWrapper style="h-[calc(100dvh-70px)] z-10 lg:mt-0 mt-6">
+    <ComponentWrapper style="lg:h-[calc(100dvh-70px)] z-10 lg:mt-0 mt-6">
       <div className="w-full h-full grid lg:grid-cols-[1.5fr,1fr] lg:gap-0 gap-8">
         <aside className="xl:w-[80%] lg:w-[90%] w-full h-full flex flex-col lg:items-start items-center justify-center gap-6 z-10">
           <h1 className="text-black-main sm:text-[56px] text-5xl leading-[60px] lg:text-left text-center sm:leading-[70px] font-bold font-quicksand">
