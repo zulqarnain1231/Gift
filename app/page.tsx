@@ -1,5 +1,6 @@
 import Hero from "@/components/Home/Hero";
 import LifeEasier from "@/components/Home/MakeLifeEasier/LifeEasier";
+import MoreFeatures from "@/components/Home/WhatMakesDiff/MoreFeatures";
 import Navbar from "@/components/Shared/Navigations/Navbar";
 import Image from "next/image";
 
@@ -21,6 +22,7 @@ export default function Home() {
         </div>
       </section>
       <LifeEasier />
+      <MoreFeatures />
     </main>
   );
 }

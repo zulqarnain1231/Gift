@@ -21,6 +21,7 @@ const config: Config = {
           off: "#E1E1E1",
           secondary: "#F8F4F2",
         },
+        warning: "#F7BF44",
       },
       fontFamily: {
         robotto: ["Roboto", "sans-serif"],
