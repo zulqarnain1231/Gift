@@ -22,7 +22,7 @@ const MoreFeatureCard: React.FC<Props> = ({
       </p>
       <NextImage
         imageSrc={image}
-        containerStyle="w-full h-[260px]"
+        containerStyle="w-full sm:h-[260px] h-[200px]"
         imageStyle="object-fill"
       />
     </div>
