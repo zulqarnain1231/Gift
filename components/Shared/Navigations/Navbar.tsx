@@ -36,7 +36,7 @@ const Navbar = () => {
           {" "}
           LOGO
         </Link>
-        <div className="h-full lg:flex hidden items-center justify-center gap-8">
+        <div className="h-full lg:flex hidden items-center justify-center gap-8 z-10">
           {menu.map((item: any, index: number) => (
             <Link
               key={index}

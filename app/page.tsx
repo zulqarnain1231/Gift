@@ -8,7 +8,7 @@ export default function Home() {
       <section className="w-full relative">
         <Navbar />
         <Hero />
-        <div className="absolute top-0 right-0 z-0">
+        <div className="absolute lg:inline-block hidden lg:top-0 bottom-0 right-0 z-0">
           <div className="relative h-[100dvh] w-[624px]">
             <Image
               className="w-full h-full object-fill"
