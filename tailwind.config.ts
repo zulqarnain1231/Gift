@@ -26,6 +26,7 @@ const config: Config = {
         robotto: ["Roboto", "sans-serif"],
         caveat: ["Caveat", "sans-serif"],
         quicksand: ["Quicksand", "sans-serif"],
+        vampiro: ["Vampiro One", "sans-serif"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
