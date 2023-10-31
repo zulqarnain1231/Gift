@@ -4,6 +4,7 @@ import LifeEasier from "@/components/Home/MakeLifeEasier/LifeEasier";
 import Testimonials from "@/components/Home/Testimonials/Testimonials";
 import MoreFeatures from "@/components/Home/WhatMakesDiff/MoreFeatures";
 import WhatWeOffer from "@/components/Home/WhatWeOffer/WhatWeOffer";
+import Footer from "@/components/Shared/Navigations/Footer";
 import Navbar from "@/components/Shared/Navigations/Navbar";
 import Image from "next/image";
 
@@ -29,6 +30,7 @@ export default function Home() {
       <MoreFeatures />
       <Testimonials />
       <Faqs />
+      <Footer />
     </main>
   );
 }

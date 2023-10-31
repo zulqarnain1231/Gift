@@ -76,7 +76,7 @@ const Navbar = () => {
           },
         }}
       >
-        <div className="w-full h-full flex flex-col items-center justify-start gap-6 p-3">
+        <div className="w-full h-full flex flex-col items-center justify-start gap-8 p-3">
           <div className="w-full flex items-center justify-end">
             <button onClick={toggleDrawer}>
               <RxCross1 className="text-2xl text-brand-main" />
@@ -92,6 +92,13 @@ const Navbar = () => {
               {item.name}
             </Link>
           ))}
+          <Link
+            href={"/"}
+            onClick={toggleDrawer}
+            className="px-[44px] py-3 flex rounded bg-white-main text-base text-brand-main font-semibold border border-white-main"
+          >
+            Get Started
+          </Link>
         </div>
       </Drawer>
     </ComponentWrapper>
