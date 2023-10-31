@@ -10,7 +10,7 @@ function CustomNextArrow(props: any) {
   const { className, style, onClick } = props;
   return (
     <button
-      className="absolute -bottom-5 xl:right-[8%] lg:right-[10%] sm:right-[5%]  right-[2%] h-[56px] w-[56px] flex items-center justify-center z-10 border-2 border-brand-main rounded-full"
+      className="absolute -bottom-5 xl:right-[8%] lg:right-[10%] sm:right-[5%]  right-[2%] h-[56px] w-[56px] flex items-center justify-center z-20 border-2 border-brand-main rounded-full"
       onClick={onClick}
     >
       <BsArrowRight className="text-2xl text-brand-main" />
@@ -22,7 +22,7 @@ function CustomPrevArrow(props: any) {
   const { className, style, onClick } = props;
   return (
     <button
-      className="absolute -bottom-5 xl:right-[13%] lg:right-[17%] right-[20%]  h-[56px] w-[56px] flex items-center justify-center z-10 border-2 border-brand-main rounded-full"
+      className="absolute -bottom-5 xl:right-[13%] lg:right-[17%] right-[20%]  h-[56px] w-[56px] flex items-center justify-center z-20 border-2 border-brand-main rounded-full"
       onClick={onClick}
     >
       <BsArrowLeft className="text-2xl text-brand-main" />
@@ -56,6 +56,12 @@ const FeaturesSlider = () => {
         "Product recommendations are made based on the date category, sourced through affiliate marketing from platforms like Amazon.",
       background: "bg-warning",
     },
+    {
+      title: "Event Planner ",
+      detail:
+        "Users can create events, invite people via a unique link, and track attendance.",
+      background: "bg-[#9AB892]",
+    },
   ];
   const settings = {
     dots: false,
@@ -64,7 +70,7 @@ const FeaturesSlider = () => {
     prevArrow: <CustomPrevArrow />,
     speed: 500,
     autoplay: true,
-    slidesToShow: 3.5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
@@ -105,6 +111,7 @@ const FeaturesSlider = () => {
           />
         ))}
       </Slider>
+      <div className="w-[100px] absolute right-0 bg-white-secondary h-[360px] top-0 slider-overlay"></div>
       <div className="absolute lg:bottom-[5%] sm:bottom-[5%] bottom-[7%] right-0 z-20">
         <NextImage
           imageSrc="/Assets/CurvedGift.png"

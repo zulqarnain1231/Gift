@@ -14,6 +14,14 @@
     padding: 0 -10px !important;
   }
 }
+.slider-overlay {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .slider-overlay {
+    display: inline-block;
+  }
+}
 
 .categories .slick-list {
   height: 460px !important;
