@@ -29,3 +29,28 @@
 .slick-slide {
   height: 100% !important;
 }
+
+/* faq accordion styles */
+.Mui-expanded .MuiAccordion-region {
+  background-color: #fff !important;
+  transition: ease-in 0.2s !important;
+  border-radius: 4px !important;
+}
+.MuiAccordion-root .Mui-expanded {
+  background-color: #fff !important;
+  transition: ease-in 0.2s !important;
+  border-radius: 4px !important;
+}
+.MuiAccordion-gutters {
+  margin: 1rem 0 !important;
+}
+.MuiAccordion-root::before {
+  display: none !important;
+}
+
+.MuiAccordion-root {
+  background-color: #f8f4f2;
+  border: 2px solid #d85464;
+  border-radius: 4px !important;
+  /* padding: 12px !important; */
+}

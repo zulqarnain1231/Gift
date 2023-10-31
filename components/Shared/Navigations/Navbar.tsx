@@ -1,9 +1,16 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import ComponentWrapper from "../Wrappers/ComponentWrapper";
 import Link from "next/link";
+import Drawer from "@mui/material/Drawer";
 import { RiMenu3Line } from "react-icons/ri";
+import { RxCross1 } from "react-icons/rx";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const toggleDrawer = () => {
+    setIsOpen((prevvalue: boolean) => !prevvalue);
+  };
   const menu = [
     {
       name: "Features",
@@ -53,10 +60,40 @@ const Navbar = () => {
         >
           Get Started
         </Link>
-        <button className="inline-block lg:hidden z-10">
+        <button onClick={toggleDrawer} className="inline-block lg:hidden z-10">
           <RiMenu3Line className="text-2xl text-black-main" />
         </button>
       </nav>
+      <Drawer
+        anchor={"right"}
+        open={isOpen}
+        onClose={toggleDrawer}
+        sx={{
+          "& .MuiPaper-root": {
+            height: "100vh",
+            width: "100%",
+            background: "#F8F4F2",
+          },
+        }}
+      >
+        <div className="w-full h-full flex flex-col items-center justify-start gap-6 p-3">
+          <div className="w-full flex items-center justify-end">
+            <button onClick={toggleDrawer}>
+              <RxCross1 className="text-2xl text-brand-main" />
+            </button>
+          </div>
+          {menu.map((item: any, index: number) => (
+            <Link
+              key={index}
+              href={item.route}
+              onClick={toggleDrawer}
+              className="text-base text-black-off hover:text-brand-main hover:duration-200 font-semibold"
+            >
+              {item.name}
+            </Link>
+          ))}
+        </div>
+      </Drawer>
     </ComponentWrapper>
   );
 };

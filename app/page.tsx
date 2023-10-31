@@ -1,3 +1,4 @@
+import Faqs from "@/components/Home/Faqs";
 import Hero from "@/components/Home/Hero";
 import LifeEasier from "@/components/Home/MakeLifeEasier/LifeEasier";
 import Testimonials from "@/components/Home/Testimonials/Testimonials";
@@ -27,6 +28,7 @@ export default function Home() {
       <WhatWeOffer />
       <MoreFeatures />
       <Testimonials />
+      <Faqs />
     </main>
   );
 }
