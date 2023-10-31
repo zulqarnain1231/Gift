@@ -3,3 +3,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* slider styles here */
+
+@media (min-width: 560px) {
+  .categories .slick-slide {
+    padding: 0 10px !important;
+  }
+  .categories .slick-list {
+    padding: 0 -10px !important;
+  }
+}
+
+.categories .slick-list {
+  height: 460px !important;
+}
+.slick-slide {
+  height: 100% !important;
+}
