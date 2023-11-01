@@ -49,8 +49,8 @@
 }
 
 .MuiAccordion-root {
-  background-color: #f8f4f2;
+  background-color: #f8f4f2 !important;
   border: 2px solid #d85464;
   border-radius: 4px !important;
-  /* padding: 12px !important; */
+  /* padding: 8px !important; */
 }
