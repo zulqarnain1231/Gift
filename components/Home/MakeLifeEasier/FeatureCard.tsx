@@ -3,7 +3,7 @@ import { BsEnvelopeOpen } from "react-icons/bs";
 
 const FeatureCard = () => {
   return (
-    <div className="w-full flex flex-col items-center justify-center gap-4 bg-white-main shadow-md rounded p-8">
+    <div className="w-full flex flex-col items-center justify-center gap-4 bg-white-main shadow-md rounded p-8 hover:shadow-xl hover:duration-150 cursor-pointer">
       <span className="h-[56px] w-[56px] flex items-center justify-center bg-white-secondary rounded">
         <BsEnvelopeOpen className="text-2xl text-brand-main" />
       </span>

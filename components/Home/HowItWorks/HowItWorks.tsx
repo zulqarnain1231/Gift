@@ -16,7 +16,7 @@ const HowItWorks = () => {
     <ComponentWrapper id="howitworks" style="lg:py-16 py-10 relative">
       <div className="w-full flex flex-col items-center justify-start gap-10 relative">
         <SectionHeading heading="What Makes us" highlight="Different" />
-        <div className="w-full flex flex-col items-center justify-start gap-5">
+        <div className="w-full flex flex-col items-center justify-start lg:gap-12 gap-8">
           {[
             "/Assets/HowWorks/1.png",
             "/Assets/HowWorks/2.png",
