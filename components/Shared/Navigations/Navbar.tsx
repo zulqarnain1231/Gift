@@ -28,10 +28,10 @@ const Navbar = () => {
   const toggleDrawer = () => {
     setIsOpen((prevvalue: boolean) => !prevvalue);
   };
-  // function fpr smooth scrolling
-  let navLinks = document.querySelectorAll("nav a");
 
   useEffect(() => {
+    // function fpr smooth scrolling
+    let navLinks = document.querySelectorAll("nav a");
     function smoothScroll(this: any, event: any) {
       event.preventDefault();
 
