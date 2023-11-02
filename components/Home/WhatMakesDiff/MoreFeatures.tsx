@@ -77,13 +77,13 @@ const MoreFeatures = () => {
           containerStyle="h-[48px] w-[224px]"
         />
       </div>
-      <div className="absolute lg:bottom-[22%] sm:bottom-[26%] bottom-[27%] left-0 z-10">
+      <div className="absolute sm:inline-block hidden lg:bottom-[22%] sm:bottom-[26%] bottom-[27%] left-0 z-10">
         <NextImage
           imageSrc="/Assets/CurvedGift.png"
           containerStyle="h-[48px] w-[130px]"
         />
       </div>
-      <div className="absolute lg:bottom-[22%] sm:bottom-[26%] bottom-[27%] right-0 z-10">
+      <div className="absolute sm:inline-block hidden lg:bottom-[22%] sm:bottom-[26%] bottom-[27%] right-0 z-10">
         <NextImage
           imageSrc="/Assets/CurvedGift.png"
           containerStyle="h-[48px] w-[130px]"

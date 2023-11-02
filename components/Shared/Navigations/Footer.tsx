@@ -47,7 +47,7 @@ const Footer = () => {
                       Gift on Time
                     </p>
                   </div>
-                  <nav className="flex sm:flex-nowrap flex-wrap items-center justify-start gap-5">
+                  <nav className="sm:w-auto w-full flex sm:flex-nowrap flex-wrap items-center justify-start sm:gap-5 gap-3">
                     {menu.map((item: any, index: number) => (
                       <Link
                         key={index}
@@ -65,8 +65,8 @@ const Footer = () => {
                   </nav>
                 </div>
                 {/* right side */}
-                <div className="flex flex-col items-start justify-start gap-5">
-                  <div className="flex items-start justify-start">
+                <div className="sm:w-auto w-full flex flex-col sm:items-start items-center justify-start gap-5">
+                  <div className="sm:w-auto w-full flex items-start justify-start">
                     <Icons.GoldSpark
                       stroke=""
                       fill="none"
@@ -76,13 +76,13 @@ const Footer = () => {
                       Subscribe
                     </p>
                   </div>
-                  <div className="flex flex-col items-start sm:flex-row sm:items-center justify-start gap-3">
+                  <div className="sm:w-auto w-full flex flex-col items-start sm:flex-row sm:items-center justify-start gap-3">
                     <input
                       type="email"
                       placeholder="Enter your email"
-                      className="p-[12px] sm:w-[360px] w-[300px] text-white-main text-sm sm:text-base font-normal placeholder:text-white-main border border-white-main bg-transparent focus:outline-none rounded"
+                      className="p-[12px] sm:w-[360px] w-full text-white-main text-sm sm:text-base font-normal placeholder:text-white-main border border-white-main bg-transparent focus:outline-none rounded"
                     />
-                    <button className="sm:w-[142px] w-[120px] py-[12px] flex items-center justify-center text-brand-main text-sm sm:text-base font-normal bg-white-main rounded">
+                    <button className="sm:w-[142px] w-full py-[12px] flex items-center justify-center text-brand-main text-sm sm:text-base font-normal bg-white-main rounded">
                       Submit
                     </button>
                   </div>
@@ -102,8 +102,8 @@ const Footer = () => {
                   containerStyle="w-[31px] h-[31px]"
                 />
               </div>
-              <div className="w-full flex sm:flex-row flex-col items-start sm:items-center justify-start gap-5 sm:justify-between">
-                <div className="flex items-center justify-start gap-4">
+              <div className="w-full flex sm:flex-row flex-col items-center justify-start gap-5 sm:justify-between">
+                <div className="sm:w-auto w-full flex items-center sm:flex-nowrap flex-wrap sm:justify-start justify-center gap-4">
                   <p className="text-white-main text-sm font-normal cursor-pointer">
                     Privacy Policy
                   </p>

@@ -18,7 +18,7 @@ const SectionHeading: React.FC<Props> = ({
       <p className="text-brand-main text-xl sm:text-2xl font-semibold font-caveat">
         {subheading}
       </p>
-      <h2 className="sn:text-[56px] text-5xl text-center font-bold font-quicksand text-black-main">
+      <h2 className="sn:text-[56px] text-[43px] text-center font-bold font-quicksand text-black-main">
         {heading}
         <span className="text-brand-main"> {highlight}</span>
       </h2>

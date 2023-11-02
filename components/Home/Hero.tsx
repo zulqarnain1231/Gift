@@ -7,7 +7,7 @@ const Hero = () => {
     <ComponentWrapper style="lg:h-[calc(100dvh-70px)] z-10 lg:pt-24 pt-20">
       <div className="w-full h-full grid lg:grid-cols-[1.5fr,1fr] lg:gap-0 gap-8">
         <aside className="xl:w-[80%] lg:w-[90%] w-full h-full flex flex-col lg:items-start items-center justify-center gap-6 z-10">
-          <h1 className="text-black-main sm:text-[56px] text-5xl leading-[60px] lg:text-left text-center sm:leading-[70px] font-bold font-quicksand relative">
+          <h1 className="text-black-main sm:text-[56px] text-[42px] leading-[60px] lg:text-left text-center sm:leading-[70px] font-bold font-quicksand relative">
             Never Forget Your Important Tasks by{" "}
             <span className=" font-vampiro text-brand-main">Gift on Time</span>
             <div className="absolute right-0 xl:bottom-[50%] bottom-[40%] lg:inline-block hidden">
