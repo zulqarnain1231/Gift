@@ -26,7 +26,7 @@ const Hero = () => {
           </p>
           <div className="w-full flex sm:flex-row flex-col items-center justify-center gap-6">
             <input
-              type="text"
+              type="email"
               placeholder="Enter Your Email"
               className="w-full rounded bg-white-main p-3 text-base text-brand-main font-robotto font-normal focus:outline-none placeholder:text-brand-main"
             />
