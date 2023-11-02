@@ -72,7 +72,7 @@ const Footer = () => {
                       fill="none"
                       ClassName="text-xl -mr-1 -mt-3"
                     />
-                    <p className="text-white-main text-sm sm:text-base font-semibold">
+                    <p className="text-white-main text-lg sm:text-xl font-semibold">
                       Subscribe
                     </p>
                   </div>

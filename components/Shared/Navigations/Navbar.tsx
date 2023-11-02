@@ -3,8 +3,62 @@ import React, { useState, useEffect } from "react";
 import ComponentWrapper from "../Wrappers/ComponentWrapper";
 import Link from "next/link";
 import Drawer from "@mui/material/Drawer";
+import Select, { SelectChangeEvent } from "@mui/material/Select";
 import { RiMenu3Line } from "react-icons/ri";
 import { RxCross1 } from "react-icons/rx";
+import { styled } from "@mui/material/styles";
+import Switch, { SwitchProps } from "@mui/material/Switch";
+
+const IOSSwitch = styled((props: SwitchProps) => (
+  <Switch focusVisibleClassName=".Mui-focusVisible" disableRipple {...props} />
+))(({ theme }) => ({
+  width: 42,
+  height: 26,
+  padding: 0,
+  "& .MuiSwitch-switchBase": {
+    padding: 0,
+    margin: 2,
+    transitionDuration: "300ms",
+    "&.Mui-checked": {
+      transform: "translateX(16px)",
+      color: "#fff",
+      "& + .MuiSwitch-track": {
+        backgroundColor: theme.palette.mode === "dark" ? "#2ECA45" : "#D85464",
+        opacity: 1,
+        border: 0,
+      },
+      "&.Mui-disabled + .MuiSwitch-track": {
+        opacity: 0.5,
+      },
+    },
+    "&.Mui-focusVisible .MuiSwitch-thumb": {
+      color: "#33cf4d",
+      border: "6px solid #fff",
+    },
+    "&.Mui-disabled .MuiSwitch-thumb": {
+      color:
+        theme.palette.mode === "light"
+          ? theme.palette.grey[100]
+          : theme.palette.grey[600],
+    },
+    "&.Mui-disabled + .MuiSwitch-track": {
+      opacity: theme.palette.mode === "light" ? 0.7 : 0.3,
+    },
+  },
+  "& .MuiSwitch-thumb": {
+    boxSizing: "border-box",
+    width: 22,
+    height: 22,
+  },
+  "& .MuiSwitch-track": {
+    borderRadius: 26 / 2,
+    backgroundColor: theme.palette.mode === "light" ? "#E9E9EA" : "#39393D",
+    opacity: 1,
+    transition: theme.transitions.create(["background-color"], {
+      duration: 500,
+    }),
+  },
+}));
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -77,10 +131,9 @@ const Navbar = () => {
       <div className="w-full h-[70px] flex items-center justify-between z-50">
         <Link
           href={"/"}
-          className="text-brand-main text-xl font-quicksand font-semibold"
+          className="text-brand-main text-2xl font-vampiro font-semibold"
         >
-          {" "}
-          LOGO
+          Gift on Time
         </Link>
         <nav className="h-full lg:flex hidden items-center justify-center gap-8 z-10">
           {menu.map((item: any, index: number) => (
@@ -93,14 +146,22 @@ const Navbar = () => {
             </Link>
           ))}
         </nav>
-        <Link
-          href={"/"}
-          className={`px-[44px] py-3 z-10 lg:flex hidden rounded bg-white-main text-base text-brand-main font-semibold border ${
-            isScrolled ? "border-black-main" : "border-white-main"
-          } `}
-        >
-          Get Started
-        </Link>
+        <div className="flex items-center justify-center gap-5">
+          <div className="lg:flex hidden items-center justify-center gap-1">
+            <IOSSwitch sx={{ m: 1 }} />
+            <p className="text-base text-black-main font-semibold">Dutch</p>
+          </div>
+
+          <Link
+            href={"/"}
+            className={`px-[44px] py-3 z-10 lg:flex hidden rounded bg-white-main text-base text-brand-main font-semibold border ${
+              isScrolled ? "border-black-main" : "border-white-main"
+            } `}
+          >
+            Get Started
+          </Link>
+        </div>
+
         <button onClick={toggleDrawer} className="inline-block lg:hidden z-10">
           <RiMenu3Line className="text-2xl text-black-main" />
         </button>
@@ -135,7 +196,10 @@ const Navbar = () => {
               </Link>
             ))}
           </nav>
-
+          <div className="flex items-center justify-center gap-2">
+            <IOSSwitch sx={{ m: 1 }} />
+            <p className="text-base text-black-main font-semibold">Dutch</p>
+          </div>
           <Link
             href={"/"}
             onClick={toggleDrawer}
