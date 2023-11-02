@@ -1,4 +1,3 @@
-"use client";
 import Faqs from "@/components/Home/Faqs";
 import Hero from "@/components/Home/Hero";
 import HowItWorks from "@/components/Home/HowItWorks/HowItWorks";

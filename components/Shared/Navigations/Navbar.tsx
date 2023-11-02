@@ -31,19 +31,21 @@ const Navbar = () => {
   // function fpr smooth scrolling
   let navLinks = document.querySelectorAll("nav a");
 
-  for (const link of navLinks) {
-    link.addEventListener("click", smoothScroll);
-  }
+  useEffect(() => {
+    function smoothScroll(this: any, event: any) {
+      event.preventDefault();
 
-  function smoothScroll(this: any, event: any) {
-    event.preventDefault();
+      const href = this.getAttribute("href");
 
-    const href = this.getAttribute("href");
+      document.querySelector(href).scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+    for (const link of navLinks) {
+      link.addEventListener("click", smoothScroll);
+    }
+  }, []);
 
-    document.querySelector(href).scrollIntoView({
-      behavior: "smooth",
-    });
-  }
   const menu = [
     {
       name: "Features",
